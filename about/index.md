@@ -9,7 +9,7 @@ comments: false
 modified: 2018-01-27
 ---
 
-# Page under construction.
+# Biography
 
 I am a doctoral student in Civil Engineering at Vanderbilt University researching transportation systems with [Professor Daniel Work](https://my.vanderbilt.edu/danwork/). I earned my M.S. degree in Civil Engineering from the University of Illinois at Urbana-Champaign and B.S. in Biosystems Engineering from the University of Tennessee, Knoxville, where I graduated summa cum laude with distinction from the Chancellor’s Honors Program and the Haslam Scholars Program. I has previous work experience from Oak Ridge National Laboratory and CSX Transportation. I have also received graduate funding support from the Roadway Safety Institute and Federal Highway Administration. Please see my r&eacute;sum&eacute; and curriculum vitae.
 
