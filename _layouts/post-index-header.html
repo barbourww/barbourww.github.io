@@ -27,20 +27,20 @@
   </div><!-- /.header-title -->
 </div><!-- /.entry-header -->
 
-<div class="secondary-header">
-  {% if page.image2.credit %}<div class="image2-credit">Image source: <a href="{{ page.image2.creditlink }}">{{ page.image2.credit }}</a></div><!-- /.image2-credit -->{% endif %}
+<div class="entry-header">
+  {% if page.image2.credit %}<div class="image-credit">Image source: <a href="{{ page.image2.creditlink }}">{{ page.image2.credit }}</a></div><!-- /.image-credit -->{% endif %}
   {% if page.image2.feature %}
-    <div class="secondary-image">
+    <div class="entry-image">
       <img src="{{ site.url }}/images/{{ page.image2.feature }}" alt="{{ page.title }}">
-    </div><!-- /.secondary-image -->
+    </div><!-- /.entry-image -->
   {% endif %}
-  <div class="secondary-title">
-    <div class="secondary-title-wrap">
+  <div class="header-title">
+    <div class="header-title-wrap">
       <h1>{{ site.title }}</h1>
       <h2>{{ page.description }}</h2>
-    </div><!-- /.secondary-title-wrap -->
-  </div><!-- /.secondary-title -->
-</div><!-- /.secondary-header -->
+    </div><!-- /.header-title-wrap -->
+  </div><!-- /.header-title -->
+</div><!-- /.entry-header -->
 
 <div id="main" role="main">
   {{ content }}
