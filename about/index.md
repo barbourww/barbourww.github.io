@@ -13,6 +13,8 @@ I am a doctoral student in Civil Engineering at Vanderbilt University researchin
 
 My career and research interests focus on the application of novel and advanced computational techniques to transportation systems engineering; examples include big data analytics, machine learning, optimization, and artificial intelligence. I have applied these interests in the freight rail transportation domain through ongoing industry collaboration with Class I railroads, where improvements in network operations can lead to capacity and efficiency gains for the system. My other domain interests include pedestrian and cyclist accessibility, public transit planning, and transportation policy.
 
-In my free time I enjoy woodworking, building electronics, backpacking, biking, and beer tasting. See my [blog posts]({{ site.url }}/posts/) for some of my personal projects.
+In my free time I enjoy woodworking, building electronics, backpacking, biking, and beer tasting. See my [blog posts]({{ site.url }}/chronposts/) for some of my personal projects.
+
+<a href="mailto:{{ site.owner.email | encode_email }}" title="Email me">Email me</a> to get in touch, or see additional contact information on my r&eacute;sum&eacute; and CV.
 
 <div markdown="0"><a href="{{ site.url }}/download/william_barbour_cv.pdf" class="btn btn-info">Curriculum Vitae</a> <a href="{{ site.url }}/download/william_barbour_resume.pdf" class="btn btn-success">R&eacute;sum&eacute;</a></div>
