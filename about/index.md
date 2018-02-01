@@ -2,9 +2,7 @@
 layout: page
 title: William Barbour
 image:
-  feature: yellowstone_lake.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  feature: kandersteg.jpg
 comments: false
 modified: 2018-01-27
 ---
