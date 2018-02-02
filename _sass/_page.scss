@@ -97,42 +97,6 @@ body {
 	}
 }
 
-.secondary-title {
-	text-align: center;
-	margin: 30px 0 0;
-
-	h1 {
-		margin: 10px 20px;
-		font-weight: 700;
-		@include font-rem(32);
-		color: lighten($base-color,20);
-
-		@media #{$medium} {
-			@include font-rem(48);
-		}
-
-		@media #{$large} {
-			@include font-rem(60);
-		}
-	}
-
-	h2 {
-		margin: 0;
-		@include font-rem(18);
-		text-transform: uppercase;
-		color: lighten($base-color,40);
-
-		@media #{$medium} {
-			@include font-rem(18);
-		}
-	}
-
-	p {
-		color: lighten($base-color,20);
-	}
-}
-
-
 .feature .header-title {
 	position: absolute;
 	top: 0;
