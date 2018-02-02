@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Theme Setup (from original creator)
-description: "Instructions on how to install and customize the modern Jekyll theme HPSTR."
+title: Website design
+description: "Walkthrough for how I built my site, using the HPSTR template from mmistakes. Instructions on how to install and customize a modern Jekyll theme."
 image:
   feature: abstract-11.jpg
   credit: dargadgetz
@@ -9,6 +9,12 @@ image:
 share: true
 modified: 2016-06-01T15:14:43-04:00
 ---
+
+I decided to build my own website partly for the learning experience and partly because I'm cheap and didn't want to pay $5/month for a service (ask me how that decision is going now that I've spent tens of hours fussing with styles, scaling, and portability issues). Since I'm a graduate student, I probably shouldn't have spent so much time on this side project; but maybe now that I did, someone else can benefit from that time investment and the knowledge I've gained in the process.
+
+
+
+
 
 General notes and suggestions for customizing **HPSTR**.
 
