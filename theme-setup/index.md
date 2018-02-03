@@ -1,50 +1,44 @@
 ---
 layout: page
-title: Website design
+title: Website Build
 description: "Walkthrough for how I built my site, using the HPSTR template from mmistakes. Instructions on how to install and customize a modern Jekyll theme."
 image:
-  feature: abstract-11.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  feature: /images/oeschinese.jpg
 share: true
-modified: 2016-06-01T15:14:43-04:00
+modified: 2018-02-02T15:14:43-04:00
 ---
 
 I decided to build my own website partly for the learning experience and partly because I'm cheap and didn't want to pay $5/month for a service (ask me how that decision is going now that I've spent tens of hours fussing with styles, scaling, and portability issues). Since I'm a graduate student, I probably shouldn't have spent so much time on this side project; but maybe now that I did, someone else can benefit from that time investment and the knowledge I've gained in the process.
 
+The template for this site, hpstr-jekyll-theme came from [Michael Rose](https://mademistakes.com), available on [his Github](https://github.com/mmistakes/hpstr-jekyll-theme)
 
+Please feel free to clone or download these website material and adapt as you see fit. Make sure to give credit where credit is due, particularly the original template. My only significant modification was to the homepage, where I defined a secondary header style and added it after the primary header. I did so because I wanted a bit more of a personal hook on the homepage so that visitors could learn at least one sentence about me without having to navigate any further. The rest of the modifications were for content - I added more page links to the menu bar to make the site a bit less focused on the blog content. In the future, I'd like to entirely rework the homepage and make the blog far less of a centerpiece.
 
-
-
-General notes and suggestions for customizing **HPSTR**.
-
-HPSTR now requires [Jekyll](http://jekyllrb.com/) 3.0. Make sure to run `bundle update` if you aren't on the latest version to update all gem dependencies.
+Here are some instructions for adapting this site as your own (possibly with Github Pages). Following that are some additional instructions and code snippets related to the modifications and additions that are possible.
 
 ## Basic Setup for a new Jekyll site
 
-1. [Install Bundler](http://bundler.io) `gem install bundler` and then install [Jekyll](http://jekyllrb.com) and all dependencies `bundle install`.
-2. Fork the [HPSTR Jekyll Theme repo](https://github.com/mmistakes/hpstr-jekyll-theme/fork).
-3. Clone the repo you just forked and rename it.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
+1. Depending on your hosting process and plans to modify the site, you might want to install Ruby and Jekyll on your local machine. I did not elect to do so, since most of my content modifications could be done in a text editor and pushed to Github. To set up locally, [install Bundler](http://bundler.io) using `gem install bundler` and then install [Jekyll](http://jekyllrb.com) and all dependencies using `bundle install`.
+2. Clone or download either the original [HPSTR Jekyll Theme repo](https://github.com/mmistakes/hpstr-jekyll-theme/) or [my modification](https://github.com/barbourww/barbourww.github.io/) of it and rename the site.
+3. If you are planning to host the site via Github Pages, make sure to name your repository `*your_github_name*.github.io` and set up the hosting process in the repository settings. Check out [Github Pages](https://pages.github.com) for more information and setup guides.
+4. See the next section for the first edits you should make, primarily by editing `_config.yml` to personalize your site. 
+5. Check out the sample/existing blog posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data, which can easily be repurposed for your own use.
 6. Read the documentation below for further customization pointers and documentation.
 
-<div markdown="0"><a href="https://github.com/mmistakes/hpstr-jekyll-theme/archive/master.zip" class="btn">Download the Theme</a></div>
-
-**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site.
-{: .notice}
+<div markdown="0"><a href="https://github.com/mmistakes/hpstr-jekyll-theme/archive/master.zip" class="btn">Download HPSTR Theme</a></div>
+<div markdown="0"><a href="https://github.com/barbourww.github.io/archive/master.zip" class="btn">Download My Site</a></div>
 
 ---
 
-## Setup for an Existing Jekyll site
+## Important First Customizations
 
-1. Clone the following folders: `_includes`, `_layouts`, `_sass`, `assets`, and `images`.
-2. Clone the following folders/files and personalize content as need: `about/`, `posts/`, `tags/`, `feed.xml` and `index.html`.
-3. Edit `_config.yml` to personalize your site.
+1. Change the `title:`, `description:`, `url:`, `name:`, `avatar:`, `bio:`, `email:`, `github:`, `google_analytics:`, and `timezone:` fields in the `_config.yml` file in the top directory.
+2. Customize the site menu by editing `_includex/navigation.html` and `_data/navigation.yml`. The latter includes the external links to other pages; the two could likely be consolidated, but the separation can be helpful for organization.
+3. Work on replacing information in all of the top lavel pages: `index.html` (homepage), `about/index.md`, and `research/index.md` (only on my site).
 
 ---
 
-## Running Jekyll
+## Running Jekyll Locally
 
 The preferred method for running Jekyll is with `bundle exec`, but if you're willing to deal gem conflicts feel free to go cowboy with a `jekyll build` or `jekyll serve`.
 
@@ -93,10 +87,6 @@ hpstr-jekyll-theme/
 
 ---
 
-## Customization
-
-Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to add the `title`, `description`, and `url` for your site. Links are absolute and prefixed with `{{ "{{ site.url " }}}}` in the various `_includes` and `_layouts`, so remember to properly set `url`[^1] to `http://localhost:4000` when developing locally.
-
 ### Disqus Comments
 
 Create a [Disqus](http://disqus.com) account and change `disqus_shortname` in `_config.yml` to the Disqus *shortname* you just setup. By default comments appear on all post and pages if you assigned a shortname. To disable commenting on a post or page, add the following to its YAML Front Matter:
@@ -119,25 +109,13 @@ Change your name, and avatar photo (200x200 pixels or larger), email, and social
 
 ### Google Analytics and Webmaster Tools
 
-Your Google Analytics ID goes here along with meta tags for [Google Webmaster Tools](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35179) and [Bing Webmaster Tools](https://ssl.bing.com/webmaster/configure/verify/ownershi) site verification.
-
-### Navigation Links
-
-To add additional links in the drop down menu edit `_data/navigation.yml`. Use the following format to set the URL and title for as many links as you'd like. *External links will open in a new window.*
-
-```yaml
-- title: Portfolio
-  url: /portfolio/
-
-- title: Made Mistakes
-  url: http://mademistakes.com  
-```
+Your [Google Analytics](https://www.google.com/analytics/#?modal_active=none) ID should be placed in its field in the `_config.yml` file. You can also add [Google Site Verification](https://support.google.com/webmasters/answer/35179?hl=en) in the same.
 
 ---
 
 ## Adding New Content
 
-Posts are stored in the `_posts` directory and named according to the `YEAR-MONTH-DAY-title.MARKUP` format as per [the usual](https://jekyllrb.com/docs/posts/).
+Posts are stored in the `_posts` directory and named according to the `YEAR-MONTH-DAY-title.MARKUP` format as per [Jekyll standards](https://jekyllrb.com/docs/posts/).
 
 To streamline the creation of posts and pages, [Jekyll::Compose](https://github.com/jekyll/jekyll-compose) and [Octopress](https://github.com/octopress/octopress) are great plugins you can install to automate this process.
 
@@ -153,7 +131,7 @@ On by default. To turn off remove `reading_time` from `_config.yml`. Default wor
 
 ### Feature Images
 
-A good rule of thumb is to keep feature images nice and wide so you don't push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices. If you want to serve these images responsively I'd suggest looking at the [Jekyll Picture Tag](https://github.com/scottjehl/picturefill)[^2] plugin.
+A good rule of thumb is to keep feature images nice and wide so you don't push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices. If you want to serve these images responsively I'd suggest looking at the [Jekyll Picture Tag](https://github.com/scottjehl/picturefill)[^1] plugin.
 
 The two layouts make the assumption that the feature images live in the *images* folder. To add a feature image to a post or page just include the filename in the front matter like so.
 
@@ -179,21 +157,9 @@ $feature-image-height: 400px; // min 150px recommended
 $front-page-feature-image-height: 400px; // min 150px recommended
 ```
 
-#### Post/Page Thumbnails for OG and Twitter Cards
-
-Post and page thumbnails work the same way. These are used by [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) meta tags found in `head.html`. If you don't assign a thumbnail the image you assigned to `site.owner.avatar` in `_config.yml` will be used.
-
-Here's an example of what a tweet to your site could look like if you activate Twitter Cards and include all the metas in your post's YAML.
-
-![Twitter Card summary large image screenshot]({{ site.url }}/images/twitter-card-summary-large-image.jpg)
-
 ### Videos
 
 Video embeds are responsive and scale with the width of the main content block with the help of [FitVids](http://fitvidsjs.com/).
-
-### Twitter Cards
-
-Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to `head.html` to support this, you just need to [validate and apply your domain](https://dev.twitter.com/docs/cards) to turn it on.
 
 ### Link Post Type
 
@@ -201,36 +167,18 @@ Link blog like a champ by adding `link: http://url-you-want-linked` to a post's 
 
 ---
 
-## Further Customization
+### Further Customization
 
 Jekyll 2.x added support for Sass files making it much easier to modify a theme's fonts and colors. By editing values found in `_sass/variables.scss` you can fine tune the site's colors and typography.
 
 For example if you wanted a red background instead of white you'd change `$bodycolor: #fff;` to `$bodycolor: $cc0033;`.
 
-To modify the site's JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into `scripts.min.js`. [Install Node.js](http://nodejs.org/), then [install Grunt](http://gruntjs.com/getting-started), and then finally install the dependencies for the theme contained in `package.json`:
-
-```bash
-npm install
-```
-
-From the theme's root, use `grunt` to concatenate JavaScript files and optimize `.jpg`, `.png` and `.svg` files in the `images/` folder.
-
-You can also use `grunt dev` in combination with `bundle exec jekyll serve` to watch for updates in JS files that Grunt will then automatically re-build as you write your code, which will in turn auto-generate your Jekyll site when developing locally.
-
 ---
 
-## Questions?
-
-Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@mmistakes](http://twitter.com/mmistakes) or [file a GitHub Issue](https://github.com/mmistakes/hpstr-jekyll-theme/issues/new). And if you make something cool with this theme feel free to let me know.
-
----
-
-## License
+### License
 
 This theme is free and open source software, distributed under the [MIT License]({{ site.url }}/LICENSE) version 2 or later. So feel free to to modify this theme to suit your needs.
 
 ---
 
-[^1]: Used to generate absolute URLs in `feed.xml`, and for canonical URLs in `head.html`. Don't include a trailing `/` in your base url ie: http://mademistakes.com. When developing locally I suggest using http://localhost:4000 or whatever localhost you're using to properly load all theme stylesheets, scripts, and image assets. If you leave this variable blank all links will resolve correctly except those pointing to home.
-
-[^2]: If you're using GitHub Pages to host your site be aware that plugins are disabled. So you'll need to build your site locally and then manually deploy if you want to use this sweet plugin.
+[^1]: If you're using GitHub Pages to host your site be aware that plugins are disabled. So you'll need to build your site locally and then manually deploy if you want to use this sweet plugin.
