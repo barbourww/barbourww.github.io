@@ -9,9 +9,9 @@ This is a discussion of the server specifications, design rationale, and buildin
 
 ## Computer specifications
 
-The previous research workstation computer that I built had significantly less power. It was designed for 24/7 operation with an Intel Xeon quad-core CPU (E3-1275v5) and ECC RAM. As it turns out, a lot of the computation could be asynchronously parallelized quite easily to take advantage of higher core counts.
+The previous research workstation computer that I built had significantly less power. It was designed for 24/7 operation with an Intel Xeon quad-core CPU (E3-1275v5) and ECC RAM. As it turns out, a lot of the computation could be asynchronously parallelized quite easily to take advantage of higher core counts. So in the second incarnation of the research workstation, I opted for a CPU in the high-end desktop (HEDT) genre where they are used for tasks such as video editing and rendering.
 
-With this in mind, the current AMD Ryzen Threadripper CPU was selected for high core count without breaking the bank or sacrificing core speed. The Ryzen series supports overclocking and the ASUS Zenith Extreme motherboard makes this entirely possible with active VRM cooling and robust power delivery. The new configuration maintains the same high speed NVMe solid state drives via M.2 interface. Not only do these drives have extremely high bandwidth, but the input/output operations per second (IOPS) and latency are both superb[^1]. The M.2 interface on most motherboards routes through the chipset, which can hurt latency, but the Zenith Extreme appears to route two of its M.2 slots directly into the PCIe lanes. Lower speed SATA SSD's are used for ''warm'' storage, where data is used semi-frequently, and HDD's for data that is accessed infrequently.
+This led to the selection of the AMD Ryzen Threadripper 1950x CPU, which boasts high core count (16 physical) without breaking the bank or sacrificing core speed (3.4+ GHz). The Ryzen series supports overclocking and the ASUS Zenith Extreme motherboard makes this entirely possible with active VRM cooling and robust power delivery. The new configuration maintains the same high speed NVMe solid state drives via M.2 interface. Not only do these drives have extremely high bandwidth, but the input/output operations per second (IOPS) and latency are both superb[^1]. The M.2 interface on most motherboards routes through the chipset, which can hurt latency, but the Zenith Extreme appears to route two of its M.2 slots directly into the PCIe lanes. Lower speed SATA SSD's are used for ''warm'' storage, where data is used semi-frequently, and HDD's for data that is accessed infrequently.
 
 The full list of components:
 1. AMD Ryzen Threadripper 1950x CPU - 16 cores at 3.4 GHz base clock
@@ -29,6 +29,8 @@ The full list of components:
 	<figcaption>All components gathered before assembly.</figcaption>
 </figure>
 
+A number of components were actually tough to get a hold of at the time they were purchased. The release of Threadripper was still cooling down and the Zenith Extreme was in and out of stock. The global DRAM shortage was still in full swing so DDR4 prices were exorbitant. On top of that, cryptocurrency frenzy was really ramping up; thankfully I got the GTX 1080 before it reached its fever pitch and GPU's were around double their intended retail price.
+
 ## Test assembly
 
 It is always a good idea to test components outside the case where assembly is painless. Sending a component for RMA is a lot easier when it's not screwed down. I typically place my motherboard on the cardboard insert that comes in the box; components aren't as fragile as they look[^2].
@@ -38,7 +40,7 @@ As you can see, the Threadripper CPU is absolutely massive. It's dimensions are 
 <figure class="half">
 	<a href="{{ site.url }}/images/server_processor_big.jpg"><img src="{{ site.url }}/images/server_processor.jpg" alt=""></a>
 	<a href="{{ site.url }}/images/server_assemble_big.jpg"><img src="{{ site.url }}/images/server_assemble.jpg" alt=""></a>
-	<figcaption>Initial test assembly outside the case.</figcaption>
+	<figcaption>Initial test assembly outside the case. The size of that CPU still astonishes me. Note the strange orange sTR4 bracket; it's an interesting concept and were it not for the issues with the Foxconn sockets[^2], I would be completely on board with it.</figcaption>
 </figure>
 
 ## Final assembly
@@ -46,15 +48,15 @@ As you can see, the Threadripper CPU is absolutely massive. It's dimensions are 
 This was on the longer side of assembly times. The Thermaltake case was nice and spacious (massive, in fact) but a number of other factors contributed to a tedious installation. These included: separate fan extension board that came with minimal instructions for installation, long runs required for fan cables that dictated some placements, and crazy tight screws on the case for which I had only a tech-sized screwdriver (see Tools recommendations 1 and 2 below). I thought I had a lot of components, but this case could easily fit another hybrid GPU, 4-5 additional hard drives, and 1-2 additional fans. Airflow seems excellent (this has been a problem in some newer glass cases) and the build certainly makes a statement.
 
 <figure class="third">
-	<a href="{{ site.url }}/images/server_aio_big.jpg"><img src="{{ site.url }}/images/server_aio.jpg" alt=""></a>
 	<a href="{{ site.url }}/images/server_fans_big.jpg"><img src="{{ site.url }}/images/server_fans.jpg" alt=""></a>
+	<a href="{{ site.url }}/images/server_aio_big.jpg"><img src="{{ site.url }}/images/server_aio.jpg" alt=""></a>
 	<a href="{{ site.url }}/images/server_case_big.jpg"><img src="{{ site.url }}/images/server_case.jpg" alt=""></a>
-	<figcaption>Final assembly in the case with 360mm all-in-one liquid cooler.</figcaption>
+	<figcaption>Final assembly in the case with 360mm all-in-one liquid cooler. The quality of the Enermax cooler was rather impressive. Some reviewers noted that one can even drain the cooler and refill with coolant. I noticed a bit of turbulence noise coming from this one, so it may need a top-off in the future.</figcaption>
 </figure>
 
 <figure>
 	<a href="{{ site.url }}/images/server_complete_big.jpg"><img src="{{ site.url }}/images/server_complete.jpg" alt=""></a>
-	<figcaption>All components gathered before assembly.</figcaption>
+	<figcaption>Final assembly in the Thremaltake case. It still looks a bit empty - a lot of that space is for custom water cooling loop components. If this was a personal build, I think I would have gone that route.</figcaption>
 </figure>
 
 ## Aftermath
