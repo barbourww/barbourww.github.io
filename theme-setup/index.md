@@ -3,7 +3,7 @@ layout: page
 title: Website Build
 description: "Walkthrough for how I built my site, using the HPSTR template from mmistakes. Instructions on how to install and customize a modern Jekyll theme."
 image:
-  feature: /images/oeschinese.jpg
+  feature: oeschinese.jpg
 share: true
 modified: 2018-02-02T15:14:43-04:00
 ---
