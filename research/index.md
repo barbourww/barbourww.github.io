@@ -7,8 +7,8 @@ comments: false
 modified: 2018-01-27
 ---
 
-# Project 1
+# Optimization for railroad dispatching
 
-# Project 2
+# Machine learning on freight railroads
 
-# Project 3
+# Electric motor fault classification
