@@ -10,9 +10,9 @@ modified: 2018-02-02T15:14:43-04:00
 
 I decided to build my own website partly for the learning experience and partly because I'm cheap and didn't want to pay $5/month for a service (ask me how that decision is going now that I've spent tens of hours fussing with styles, scaling, and portability issues). Since I'm a graduate student, I probably shouldn't have spent so much time on this side project; but maybe now that I did, someone else can benefit from that time investment and the knowledge I've gained in the process.
 
-The template for this site, hpstr-jekyll-theme came from [Michael Rose](https://mademistakes.com), available on [his Github](https://github.com/mmistakes/hpstr-jekyll-theme)
+The template for this site, `hpstr-jekyll-theme` came from [Michael Rose](https://mademistakes.com), available on [his Github](https://github.com/mmistakes/hpstr-jekyll-theme)
 
-Please feel free to clone or download these website material and adapt as you see fit. Make sure to give credit where credit is due, particularly the original template. My only significant modification was to the homepage, where I defined a secondary header style and added it after the primary header. I did so because I wanted a bit more of a personal hook on the homepage so that visitors could learn at least one sentence about me without having to navigate any further. The rest of the modifications were for content - I added more page links to the menu bar to make the site a bit less focused on the blog content. In the future, I'd like to entirely rework the homepage and make the blog far less of a centerpiece.
+Please feel free to clone or download these website materials and adapt as you see fit. Make sure to give credit where credit is due, particularly the original template. My only significant modification was to the homepage, where I defined a secondary header style and added it after the primary header. I did so because I wanted a bit more of a personal hook on the homepage so that visitors could learn at least one sentence about me without having to navigate any further. The rest of the modifications were for content - I added more page links to the menu bar to make the site a bit less focused on the blog content. In the future, I'd like to entirely rework the homepage and make the blog far less of a centerpiece.
 
 Here are some instructions for adapting this site as your own (possibly with Github Pages). Following that are some additional instructions and code snippets related to the modifications and additions that are possible.
 
@@ -69,6 +69,7 @@ hpstr-jekyll-theme/
 |    ├── page.html                  # post-index layout used on home page
 |    └── post.html                  # post layout
 ├── _posts
+|    ├── sample_posts               # sample posts included with original website template
 ├── _sass                           # Sass partials
 ├── assets
 |    ├── css                        # compiled stylesheets
