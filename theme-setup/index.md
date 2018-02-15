@@ -69,7 +69,6 @@ hpstr-jekyll-theme/
 |    ├── page.html                  # post-index layout used on home page
 |    └── post.html                  # post layout
 ├── _posts
-|    └── sample_posts               # sample posts included with original website template
 ├── _sass                           # Sass partials
 ├── assets
 |    ├── css                        # compiled stylesheets
@@ -82,6 +81,7 @@ hpstr-jekyll-theme/
 ├── _config.yml                     # Jekyll options
 ├── about/                          # about page
 ├── posts/                          # all posts
+├── sample_posts               # sample posts included with original website template
 ├── tags/                           # all posts grouped by tag
 └── index.html                      # home page with pagination
 ```
