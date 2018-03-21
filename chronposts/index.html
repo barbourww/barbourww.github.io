@@ -5,7 +5,7 @@ description: "Chronological Post Archive"
 comments: false
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <article class="hentry">
   <header>
     {% if post.image.feature %}
@@ -33,3 +33,5 @@ comments: false
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}
+
+{% include pagination.html %}
