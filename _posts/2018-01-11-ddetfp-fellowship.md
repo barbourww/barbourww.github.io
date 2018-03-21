@@ -4,6 +4,7 @@ title: "William Barbour and Raphael Stern named 2018 Dwight David Eisenhower Tra
 description: "Dwight David Eisenhower Transportation Fellowship Award (2018)"
 tags: [fellowship, award]
 comments: false
+share: false
 link: http://www.isis.vanderbilt.edu/node/4873
 ---
 

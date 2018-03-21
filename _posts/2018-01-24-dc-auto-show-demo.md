@@ -2,7 +2,8 @@
 layout: post
 title: "Virtual Reality Research Demonstration at the Washington D.C. Auto Show"
 description: "Virtual reality demonstration of autonomous vehicle research"
-tags: [research, autonomous vehicle]
+tags: [research, autonomous vehicle, virtual reality]
+share: false
 ---
 
 In January 2018, the resarch group was invited by the National Science Foundation to present [a demonstration of our research at the Washington D.C. Auto Show](https://cps-vo.org/node/44151). The demo consisted of a virtual reality headset reliving the ''ring road experiments'' that showed how an autonomous vehicle operating in mixed human/autonomous traffic can dampen traffic waves and lead to smoother and lower-emissions traffic.

@@ -2,7 +2,8 @@
 layout: post
 title: "Custom Lab Server Build"
 description: "Server specification, design, and build for lab computation server."
-tags: [server, computer, build]
+tags: [server, computer, build, research]
+share: false
 ---
 
 This is a discussion of the server specifications, design rationale, and building process. I will also share what I learned during the process, along with some advice for computer building.

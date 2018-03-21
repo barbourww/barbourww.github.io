@@ -3,6 +3,7 @@ layout: post
 title: "Laser cut Chicago skyline in handmade shadow box"
 description: "Build of laser cut Chicago skyline mounted in a handmade shadow box"
 tags: [project, woodworking, laser cut, chicago, skyline, shadow box, handmade, diy]
+share: false
 ---
 
 The Chicago skyline is one of most recognizable in the world and was the inspiration of this project. I set out to present the most iconic city landmarks in an accent-lighted display to mimic a sunset behind the city.
