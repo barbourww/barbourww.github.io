@@ -174,14 +174,14 @@ body {
 		margin: 0;
 		color: #fff;
 
-		@media #{$large} {
-			@include font-rem(40);
+		@media #{$small} {
+			@include font-rem(18);
 		}
 		@media #{$medium} {
 			@include font-rem(36);
 		}
-		@media #{$small} {
-			@include font-rem(18);
+		@media #{$large} {
+			@include font-rem(40);
 		}
 	}
 
