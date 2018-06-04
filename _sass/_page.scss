@@ -175,10 +175,10 @@ body {
 		color: #fff;
 
 		@media #{$medium} {
-			@include font-rem(24);
+			@include font-rem(36);
 		}
-		@media #{$medium} {
-			@include font-rem(18);
+		@media #{$small} {
+			@include font-rem(24);
 		}
 	}
 
