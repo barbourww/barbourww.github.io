@@ -172,16 +172,17 @@ body {
 
 	h2 {
 		margin: 0;
+		@include font-rem(24);
 		color: #fff;
 
 		@media #{$small} {
 			@include font-rem(18);
 		}
 		@media #{$medium} {
-			@include font-rem(36);
+			@include font-rem(24);
 		}
 		@media #{$large} {
-			@include font-rem(40);
+			@include font-rem(36);
 		}
 	}
 
