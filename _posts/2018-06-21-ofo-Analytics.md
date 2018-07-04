@@ -3,6 +3,9 @@ layout: post
 title:  "Data Analytics for ofo Bike Share"
 date:   2018-06-21
 description: "Vanderbilt looks for insight from dockless bike share."
+tags: [project, data, analysis]
+comments: false
+share: false
 ---
 
 Vanderbilt University began a dockless bike share pilot program with ofo in March, 2018. The pilot garnered unprecedented interest amongst students, staff, and faculty in its first month, with over 60,000 rides. Campus administration sought to gain insight from bike data to study how people move throughout campus and to inform decisions on infrastructure.
