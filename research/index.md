@@ -7,8 +7,6 @@ comments: false
 modified: 2018-01-27
 ---
 
-### More detail to come...
-
 ## Optimization for railroad dispatching
 
 I have written a mixed integer linear optimization model that dispatches trains according to signaling constraints on single track railway lines with passing sidings and does so optimally according to the minimization of a weighted delay measure.
@@ -17,10 +15,15 @@ This concept is similar to that used in commercial computer-aided dispatching sy
 
 Specifically, the forward optimization problem (dispatching trains) can be tuned to match historical dispatching behavior as closely as possible. The resulting dispatching model is a useful simulation tool that could be used for prediction of train arrivals, assessment of dispatching performance, investigation of track infrastructure layout, and schedule optimization.
 
+<figure>
+	<a href="{{ site.url }}/images/stringline.png"><img src="{{ site.url }}/images/stringline.png" alt=""></a>
+</figure>
+
 Tools:
-* Python 2 (with parallel processing)
+* Python 3 (with parallel processing)
 * AMPL mathematical programming language
 * CPLEX optimization solver
+* Blackbox optimization packages
 * Plotly enhanced visualization
 * FFMPEG multimedia processing library
 * PostgreSQL database
@@ -37,6 +40,10 @@ Feature weights did indeed change significantly between various regression model
 
 [Preprint of the journal article.](https://www.dropbox.com/s/ojet2nbntvfeo54/Barbouretal2017.pdf?dl=0)
 
+<figure>
+	<a href="{{ site.url }}/images/route_feature_weights.jpg"><img src="{{ site.url }}/images/route_feature_weights.jpg" alt=""></a>
+</figure>
+
 Tools:
 * Python 2
 * scikit-learn machine learning library
@@ -48,7 +55,11 @@ Tools:
 
 Predictive maintenance of machinery has recently become a higher-performance methodology compared to traditional condition-based maintenance. This is due to improved sensing capabilities through the internet of things (IoT) and renewed interest in machine learning methods that perform diagnosis well. Fault states as well as machine health values can be predicted in some cases.
 
-We are interested in classifying electric motor failure conditions using accelerometer data, with specific application for traction motors on railroad locomotives. Thus far, machine learning classifiers have been trained and tested on motor data from a test bench with various healthy and failure conditions.
+We are interested in classifying electric motor failure conditions using accelerometer data, with specific application for traction motors on railroad locomotives. Machine learning classifiers were first trained and tested on motor data from a test bench to make the binary prediction of faulty or healthy condition. Ensemble models were then developed to make the multi-label classification of which fault, or which combination of fault, are present in a motor.
+
+<figure>
+	<a href="{{ site.url }}/images/test_bench.png"><img src="{{ site.url }}/images/test_bench.png" alt=""></a>
+</figure>
 
 Tools:
 * Python 3
@@ -62,10 +73,24 @@ Commercial mapping platforms are excellent at giving directions on public roadwa
 
 For these reasons, Vanderbilt University is intersted in developing a campus mobility platform with enhanced functionality for students, staff, faculty, and visitors. Many of the advanced routing techniques used by large-scale mapping systems such as caching, precomputation, and optimized algorithms are not necessary. But campus-specific features such as bike rack locations, building name matching, points of interest, accessible paths, and turn-by-turn directions on unnamed irregular pedestrian ways are more important.
 
-We are developing a prototype backend and frontend for the campus mobility platform that will eventually be integrated as a campus-supported mobile application.
+We developed a mapping backend, run on a remote server, and a prototype frontend iPhone application for the campus mobility platform that may eventually be integrated as a campus-supported mobile application. The backend uses an infrastructure graph assembled from raw campus GIS data, on which routing algorithms are applied for wayfinding. The prototype application incorporates basic traditional and augmented reality route guidance (seen below).
+
+<figure class="half">
+	<a href="{{ site.url }}/images/screen1.png"><img src="{{ site.url }}/images/screen1_crop.png" alt=""></a>
+	<a href="{{ site.url }}/images/screen2.png"><img src="{{ site.url }}/images/screen2_crop.png" alt=""></a>
+<figcaption>Screenshots from iPhone application for augmented reality route guidance.</figcaption>
+</figure>
+
+<figure class="half">
+	<a href="{{ site.url }}/images/satellite.png"><img src="{{ site.url }}/images/satellite_crop.png" alt=""></a>
+	<a href="{{ site.url }}/images/map_layers.png"><img src="{{ site.url }}/images/map_layers_crop.png" alt=""></a>
+<figcaption>1) Campus infrastructure seen from satellite imagery. 2) Routing graph edges and nodes, along with campus facilities and topography lines that are integrated into node and edge metadata.</figcaption>
+</figure>
 
 Tools:
 * Python 3
+* Flask + SocketIO
+* Swift, ARKit
 * Shapely Python spatial processing
 * PostgreSQL database with PostGIS spatial extension
 * QGIS geographic information system application
