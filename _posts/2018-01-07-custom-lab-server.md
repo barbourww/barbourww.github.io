@@ -8,6 +8,12 @@ share: false
 
 This is a discussion of the server specifications, design rationale, and building process. I will also share what I learned during the process, along with some advice for computer building.
 
+### Update October 2019
+
+A few months ago, I replaced the Enermax Liqtech AIO cooler due to mysterious thermal throttling issues that were occurring on the server. At the time, I did not have the extra time to track down the issue fully and needed to get the server back online, so I shipped overnight a Noctua NH-U14S TR4-SP3 air cooler. That solved the problem and CPU thermals have been low and stable ever since. I shelved the Enermax AIO and didn't give it a second though until I came across a [Gamers Nexus YouTube video](https://www.youtube.com/watch?v=nttKqzQiZEo) detailing systemic failures in these Enermax Liqtech units due to some sort of corrosion build-up and blockage. I have not yet investigated whether this was the cause of my issues, but it seems highly likely based on their strong findings.
+
+I have updated the parts list below to reflect the new CPU cooler - I highly recommend the Noctua NH-U14S for its simplicity and performance, even on this demanding processor.
+
 ## Computer specifications
 
 The previous research workstation computer that I built had significantly less power. It was designed for 24/7 operation with an Intel Xeon quad-core CPU (E3-1275v5) and ECC RAM. As it turns out, a lot of the computation could be asynchronously parallelized quite easily to take advantage of higher core counts. So in the second incarnation of the research workstation, I opted for a CPU in the high-end desktop (HEDT) genre where they are used for tasks such as video editing and rendering.
@@ -16,7 +22,7 @@ This led to the selection of the AMD Ryzen Threadripper 1950x CPU, which boasts 
 
 The full list of components:
 1. AMD Ryzen Threadripper 1950x CPU - 16 cores at 3.4 GHz base clock
-2. Enermax Liqtech TR4 360mm all-in-one liquid cooler
+2. Noctua NH-U14S TR4-SP3 air cooler (previously Enermax AIO, see update above)
 3. ASUS Zenith Extreme sTR4 eATX motherboard
 4. 64GB Corsair Vengeance RAM at 3466 MHz
 5. Samsung 960 EVO 1TB NVMe solid state drives - hot/active storage
