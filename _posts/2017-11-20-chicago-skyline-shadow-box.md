@@ -2,7 +2,7 @@
 layout: post
 title: "Laser cut Chicago skyline in handmade shadow box"
 description: "Build of laser cut Chicago skyline mounted in a handmade shadow box"
-tags: [project, woodworking, laser cut, chicago, skyline, shadow box, handmade, diy]
+tags: [project, woodworking, laser cut, chicago, skyline, diy]
 share: false
 ---
 

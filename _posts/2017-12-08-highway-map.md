@@ -2,7 +2,7 @@
 layout: post
 title: "Laser cut U.S. Interstate Highway Map"
 description: "Build of laser cut U.S. Interstate Highway map project"
-tags: [project, woodworking, laser cut, diy, handmade]
+tags: [project, woodworking, laser cut, diy]
 share: false
 ---
 
