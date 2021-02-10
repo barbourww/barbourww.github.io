@@ -28,7 +28,7 @@ My dissertation dealt with improving network operations in the freight rail tran
 	<a href="{{ site.url }}/images/jacksonville_big.jpg"><img src="{{ site.url }}/images/jacksonville.jpg" alt=""></a>
 </figure>
 
-In my free time I enjoy woodworking, building electronics, backpacking, biking, and beer tasting. See my [blog posts]({{ site.url }}/chronposts/) for some of my personal projects. I have a hound-mix puppy who goes by Mikey; coincidentally, he also enjoys hiking and biking with me.
+In my free time I enjoy woodworking, building custom electronics, backpacking, biking, and beer tasting. See my [blog posts]({{ site.url }}/chronposts/) for some of my personal projects. I have a hound dog who goes by Mikey; coincidentally, he also enjoys hiking and biking with me.
 
 <figure class="half">
 	<a href="{{ site.url }}/images/mikey_hike.jpg"><img src="{{ site.url }}/images/mikey_hike.jpg" alt=""></a>
