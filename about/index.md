@@ -9,7 +9,9 @@ modified: 2018-01-27
 
 # Biography
 
-I am a research scientist at the Institute for Software Integrated Systems at Vanderbilt University researching transportation systems with [Professor Daniel Work](https://my.vanderbilt.edu/danwork/). I earned my Ph.D. in civil engineering from Vanderbilt University; my M.S. degree in civil engineering, with a concentration in sustainable and resilient infrastructure systems, from the University of Illinois at Urbana-Champaign; and my B.S. in Biosystems Engineering from the University of Tennessee, Knoxville, where I graduated summa cum laude with distinction from the Chancellor’s Honors Program and the Haslam Scholars Program. I have previously worked at Oak Ridge National Laboratory and CSX Transportation and have also received graduate funding support from the Roadway Safety Institute and Federal Highway Administration.
+I am a research scientist at the Institute for Software Integrated Systems at Vanderbilt University researching transportation systems with [Professor Daniel Work](https://my.vanderbilt.edu/danwork/). I am the engineering and technology lead for the [I-24 MOTION testbed](https://i24motion.org) and have been with the project since its inception. I am also leading the software development of the artificial intelligence decision support system (AI-DSS) that will power the integrated corridor management of the I-24 Smart Corridor. 
+
+I earned my Ph.D. in civil engineering from Vanderbilt University; my M.S. degree in civil engineering, with a concentration in sustainable and resilient infrastructure systems, from the University of Illinois at Urbana-Champaign; and my B.S. in Biosystems Engineering from the University of Tennessee, Knoxville, where I graduated summa cum laude with distinction from the Chancellor’s Honors Program and the Haslam Scholars Program. I have previously worked at Oak Ridge National Laboratory and CSX Transportation and have also received graduate funding support from the Roadway Safety Institute and Federal Highway Administration. My service activities include serving on the Board of ITS Tennessee and the Technical Advisory Committee of TennSmart.
 
 My career and research interests focus on the application of novel and advanced computational techniques to transportation systems engineering; examples include big data analytics, machine learning, optimization, and artificial intelligence. Currently, my work is focused on building sensing and data processing infrastructure for highway traffic analysis. Using cameras and computer vision processing, we can assemble the trajectory of each vehicle on the roadway to form a complete picture of traffic. This unlocks potential experiments on the roadway to reduce congestion, control the generation of traffic waves, and understand the impact of autonomous and semi-autonomous vehicles.
 
@@ -28,7 +30,7 @@ My dissertation dealt with improving network operations in the freight rail tran
 	<a href="{{ site.url }}/images/jacksonville_big.jpg"><img src="{{ site.url }}/images/jacksonville.jpg" alt=""></a>
 </figure>
 
-In my free time I enjoy woodworking, building custom electronics, backpacking, biking, and beer tasting. See my [blog posts]({{ site.url }}/chronposts/) for some of my personal projects. I have a hound dog who goes by Mikey; coincidentally, he also enjoys hiking and biking with me.
+In my free time I enjoy woodworking, building custom electronics, backpacking, and biking. See my [blog posts]({{ site.url }}/chronposts/) for some of my personal projects. I am a construction site supervisor with Habitat for Humanity of Greater Nashville on the weekends. I have a hound dog who goes by Mikey; coincidentally, he also enjoys hiking and biking with me.
 
 <figure class="half">
 	<a href="{{ site.url }}/images/mikey_hike.jpg"><img src="{{ site.url }}/images/mikey_hike.jpg" alt=""></a>

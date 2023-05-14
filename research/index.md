@@ -7,6 +7,22 @@ comments: false
 modified: 2018-01-27
 ---
 
+## I-24 MOTION
+
+Since 2018, I have helped conceptualize, develop, construct, and operate the I-24 MOTION testbed. The system is intended to serve as the most densely instrumented open-road testbed and data collection instrument for highway traffic, as well as an experimentation facility for connected and automated vehicles and technology. Construction of the testbed completed in 2022 with a total of 294 cameras providing non-stop visual coverage of four miles of Interstate 24, southeast of Nashville, TN. I now serve as the engineering and technology lead for I-24 MOTION.
+
+The best place to read [more about I-24 MOTION is on its website](https://i24motion.org).
+
+The field hardware making the system possible includes 4K-resolution IP cameras, a custom camera mount and enclosure allowing this unprecedented density of coverage, over 100 network components to transmit petabytes worth of video data, and a 40Gb fiber network connected to Vanderbilt University. On the data processing front, we built a dedicated server cluster to ingest video feeds, process them into vehicle trajectories using 3D computer vision with coordinate system calibration, and host all the necessary data for the system.
+
+This project has, and continues to, rely on an entire team to make it a reality and a success. From the hardware in the field to the software on the server cluster, all aspects must be operational and resilient to produce the rich data that the system is uniquely capable of generating.
+
+## Decision support system for I-24 Smart Corridor
+
+The I-24 Smart Corridor is a large-scale integrated corridor management project seeking to improve the travel experience between Nashville and Murfreesboro, TN. The system is based on a variety of intelligent transportation systems technologies and relies on an extensive software backend to manage the roadway. I lead the software development for the artificial intelligence decision support system (AI-DSS), which suggests response plans to corridor managers so they can respond quickly to changing traffic conditions.
+
+The AI-DSS monitors a network of around 50 radar traffic detectors and a feed of reported incidents in the area. It uses this information, along with addition data sources, to generate recommendations for the 67 lane control and variable speed limit sign clusters that inform the motoring public and control traffic. It will also be able to recommend diversion routing plans during roadway incidents, which can consist of modified signal timing plans for surface streets to reduce delay. 
+
 ## Optimization for railroad dispatching
 
 I have written a mixed integer linear optimization model that dispatches trains according to signaling constraints on single track railway lines with passing sidings and does so optimally according to the minimization of a weighted delay measure.
@@ -29,7 +45,7 @@ Tools:
 * PostgreSQL database
 
 
-## Management of shared e-scooter parking"
+## Management of shared e-scooter parking
 
 Proliferation of shared urban mobility devices (SUMDs), particularly dockless e-scooters, has created opportunities for users desiring efficient, short trips. Simultaneously, these devices have raised management challenges for cities and regulators in terms of safety, infrastructure, and parking. There is a need in some high-demand areas for dedicated parking locations for dockless e-scooters and other devices.
 
